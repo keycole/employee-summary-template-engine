@@ -11,7 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-const theTeamMembers = [];
+const employees = [];
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -87,6 +87,7 @@ function addMorePrompt(){
             main();
         }else{
             console.log('Thank you. See you next time. Remember: Teamwork makes the dream work!');
+            render(employees);
         }
     });
 };
@@ -115,8 +116,8 @@ function selectEmployee() {
 function newManager() {
     inquirer.prompt(managerQuestions()).then((answers) => {
       const newManager = new Manager(answers.newName, answers.newID, answers.newEmail, answers.newManagerOfficeNumber);
-      theTeamMembers.push(newManager);
-      let legibleArray = JSON.stringify(theTeamMembers);
+      employees.push(newManager);
+      let legibleArray = JSON.stringify(employees);
       console.log(`The team members array so far = ${legibleArray}`);
       let legibleMgrAdded = JSON.stringify(newManager);
       console.log(`The new manager = ${legibleMgrAdded}`);
@@ -127,8 +128,8 @@ function newManager() {
 function newEngineer() {
   inquirer.prompt(engineerQuestions()).then((answers) => {
     const newEngineer = new Engineer(answers.newName, answers.newID, answers.newEmail, answers.newEngineerGitHub);
-    theTeamMembers.push(newEngineer);
-    let legibleArray = JSON.stringify(theTeamMembers);
+    employees.push(newEngineer);
+    let legibleArray = JSON.stringify(employees);
     console.log(`The team members array so far = ${legibleArray}`);
     let legibleEngineerAdded = JSON.stringify(newEngineer);
     console.log(`The new engineer = ${legibleEngineerAdded}`);
@@ -139,8 +140,8 @@ function newEngineer() {
 function newIntern() {
     inquirer.prompt(internQuestions()).then((answers) => {
       const newIntern = new Intern(answers.newName, answers.newID, answers.newEmail, answers.newInternSchool);
-      theTeamMembers.push(newIntern);
-      let legibleArray = JSON.stringify(theTeamMembers);
+      employees.push(newIntern);
+      let legibleArray = JSON.stringify(employees);
       console.log(`The team members array so far = ${legibleArray}`);
       let legibleInternAdded = JSON.stringify(newIntern);
       console.log(`The new intern = ${legibleInternAdded}`);
