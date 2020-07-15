@@ -53,7 +53,16 @@ const commonInputs = ([
     {
         type: 'input',
         name: 'newName',
-        message: 'Please enter the name for the Employee you are adding.'
+        message: 'Please enter the name for the Employee you are adding.',
+        validate: function(value) {
+            let pass = value.match(
+                /^[a-zA-Z ]{2,30}$/
+            );
+            if (pass){
+                return true;
+            }
+            return 'Please enter a valid name (between 2 - 30 characters, no numbers or symbols).'
+        },
     },
     {
         type: 'input',
