@@ -155,8 +155,6 @@ function addMorePrompt() {
             console.log('Thank you. See you next time. Remember: Teamwork makes the dream work!');
             //When the user has finished entering all team members, call a function to render
             //the HTML and generate the team page
-            let legibleArray = JSON.stringify(employees);
-            console.log(`The employees array =  ${legibleArray}`);
             outputTeamHTML(employees);
 
         };
