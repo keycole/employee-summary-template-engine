@@ -11,6 +11,8 @@ A Node CLI that takes in information about employees and generates an HTML webpa
 [Demo](#demo) &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; [Installation](#installation) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Tests](#tests) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Contributing](#contributing) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [License](#license)
 
 ## Demo
+**Link to screencast:** https://drive.google.com/file/d/10xKknzbApAdz-KZ5FXeDnxwXR6yhJgf3/view
+
 ![Screencast](assets/readmeImages/teamBuilderDemo.gif)
 
 **Desktop Output**
