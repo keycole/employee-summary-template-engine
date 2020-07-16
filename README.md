@@ -48,7 +48,7 @@ A Node CLI that takes in information about employees and generates an HTML webpa
 ## Contributing
 - Fork or clone the repository
 - Extend and improve the code, make it your own, make it amazing!
-    - Add additional prompts and features.
+    - Add additional prompts and features
     - Improve validation checks
 - Reach out to me with your work and share your code using the email accessible by clicking the "Ask me anything" badge at the top of the page. Let's get better together!
 
