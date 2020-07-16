@@ -57,7 +57,7 @@ const commonInputs = ([
             if (pass) {
                 return true;
             }
-            return 'Please enter a valid name. (You may not use numbers or any special characters besides - or \'\.'
+            return 'Please enter a valid name. (You may not use numbers or any special characters besides . ,  \' , or - .'
         },
     },
     {
