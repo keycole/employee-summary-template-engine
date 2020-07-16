@@ -5,28 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Dream Team</title>
+    <!--Semantic-UI CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+<div class="ui padded centered grid container" id="content-wrapper">
+    <div class="row">
+        <div class="column">
+            <div class="ui message">
+                <h1 class="ui header"><span style="color: black;"><i class="far fa-building"></i></span> Our Team</h1>
+                <p>“The strength of the team is each individual member. The strength of each member is the team.” –
+                    <i>Phil Jackson</i></p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
-            </div>
-        </div>
+    <!--END HEADER-->
+    <div class="ui three stackable cards" id="team-card-container">
+        {{ team }}
     </div>
+</div>
 </body>
 
 </html>

@@ -1,13 +1,32 @@
-<div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">{{ name }}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+<div class="ui raised card">
+    <div class="content">
+        <div class="header">{{ name }}</div>
     </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: {{ id }}</li>
-            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
-        </ul>
+    <div class="content">
+        <h3 class="ui sub header"><i class="fas fa-glasses"></i> {{ role }}</h3>
+        <div class="ui small feed">
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        ID: {{ id }}
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        Email: <a href="mailto:{{ email }}">{{ email }}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        GitHub: <a href="https://github.com/{{ github }}" target="_blank"
+                            rel="noopener noreferrer">{{ github }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

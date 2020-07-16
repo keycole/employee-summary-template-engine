@@ -21,7 +21,7 @@ function main() {
 
 //First ask the user which type of employee they will be creating
 const employeePrompt = {
-    type: 'list',
+    type: 'rawlist',
     name: 'newEmployee',
     message: 'Which type of employee would you like to add?',
     choices: ['Manager', 'Engineer', 'Intern'],
@@ -119,7 +119,7 @@ function newEngineer() {
     inquirer.prompt(engineerQuestions()).then((answers) => {
         const newEngineer = new Engineer(answers.newName, answers.newID, answers.newEmail, answers.newEngineerGitHub);
         employees.push(newEngineer);
-        return newEngineer;
+        //return newEngineer;
     }).then(addMorePrompt); //ask user if they would like to add another employee
 };
 
@@ -138,7 +138,7 @@ function newIntern() {
     inquirer.prompt(internQuestions()).then((answers) => {
         const newIntern = new Intern(answers.newName, answers.newID, answers.newEmail, answers.newInternSchool);
         employees.push(newIntern);
-        return newIntern;
+        //return newIntern;
     }).then(addMorePrompt); //ask user if they would like to add another employee
 };
 
@@ -155,6 +155,8 @@ function addMorePrompt() {
             console.log('Thank you. See you next time. Remember: Teamwork makes the dream work!');
             //When the user has finished entering all team members, call a function to render
             //the HTML and generate the team page
+            let legibleArray = JSON.stringify(employees);
+            console.log(`The employees array =  ${legibleArray}`);
             outputTeamHTML(employees);
 
         };
