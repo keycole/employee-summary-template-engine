@@ -1,4 +1,4 @@
-
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-green.svg)](https://github.com/keycole)&nbsp;&nbsp;&nbsp;[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:nicole.graiff@gmail.com)
 
 
 # Employee Summary Template Engine
@@ -8,23 +8,20 @@ A Node CLI that takes in information about employees and generates an HTML webpa
 
 #### Table of Contents
 
-[Demo](#demo) &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; [Installation](#installation) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Tests](#usage) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Contributing](#contributing) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [License](#license)
+[Demo](#demo) &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; [Installation](#installation) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Tests](#tests) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Contributing](#contributing) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [License](#license)
 
 ## Demo
 ![Screencast](assets/readmeImages/teamBuilderDemo.gif)
 
 **Desktop Output**
 
-
 <img src="assets/readmeImages/desktopScreenshot.png" alt="desktop screenshot" width="500">
 
 **Tablet Output**
 
-
 <img src="assets/readmeImages/tabletScreenshot.png" alt="tablet screenshot" width="400">
 
 **Mobile Output**
-
 
 <img src="assets/readmeImages/mobileScreenshot.png" alt="mobile screenshot" width="300">
 
