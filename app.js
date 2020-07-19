@@ -5,8 +5,8 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-//const OUTPUT_DIR = path.resolve(__dirname, "output"); //Trying to figure out how to create the directory along with the file...
-const outputPath = path.join('output', "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 //Array to store employees as they are created
@@ -67,7 +67,7 @@ const commonInputs = ([
         validate: function (value) {
             var valid = !isNaN(parseFloat(value));
             return valid || 'Please enter a number';
-          },
+        },
     },
     {
         type: 'input',
@@ -172,14 +172,11 @@ const outputTeamHTML = async (employees) => {
             } else {
                 console.log('Success! Your team page has been generated.');
             }
-        } 
-        )}catch (error) {
-                throw error;
-        };
+        }
+        )
+    } catch (error) {
+        throw error;
+    };
 };
 
-function init() {
-    main();
-};
-
-init();
+main();
